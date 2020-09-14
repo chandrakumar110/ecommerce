@@ -135,3 +135,66 @@ h4{
 .col-4:hover{
 	transform: translateY(-5px);
 }
+.offer{
+	background:radial-gradient(#fff,#ffd6d6);
+	margin-top: 80px;
+	margin: auto;
+	padding: -500px 0;
+}
+.col-2 .offer-img{
+	width: 95%;
+}
+.brands{
+	margin: 100px auto;
+}
+.col-5{
+	width:60px;
+}
+.col-5 img{
+	width: 100%;
+	cursor: pointer;
+	filter: grayscale(100%);
+
+}
+.col-5 img:hover{
+	filter: grayscale(0);
+}
+.footer{
+	background: #000;
+	color:#8a8a8a;
+	font-size: 14px;
+}
+.container{
+	padding:0;
+	margin: auto;
+	display: inline;
+}
+.footer p{
+	color:#8a8a8a;
+}
+.footer h3{
+	color: #fff;
+	margin-bottom: 20px;
+} 
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1{
+	flex-basis: 25%;
+}
+.footer-col-2{
+	flex:1;
+	text-align: center;
+}
+.footer-col-2 img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+	flex-basis: 12%;
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+}
