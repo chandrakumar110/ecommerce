@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Red Store | Ecommerce</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -8,77 +10,51 @@
 <body>
 	<div class="header">
 		<div class="container">
-		<div class="navbar">
-		<div class="logo">
-			<img src="images/download.png" width="150px">
-		</div>
-		<nav>
-			<ul>
-				<li><a href="">Home</a></li>
-				<li><a href="">Products</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
-				<li><a href="">Account</a></li>
-				<li><a href="">Cart<i class="fa fa-shopping-cart"></i></a></li>
-			</ul>
-		</nav>
-	    </div>
-	    <div class="row">
-	    	<div class="col-2">
-	    		<h1>Give Your Workout <br>A New Style!</h1>
-	    		<p>Success isn't always about greatness. It's about consistency.Consistent hard work gains success. Greatness will come.</p>
-	    		<a href="" class="btn">Explore Now &#x279C;</a>
+		    <div class="navbar">
+		    	<div class="logo">
+			    	<img src="images/download.png" width="100px" height="30px">
+		    	</div>
+		    	<nav>
+			    	<ul id="menuitems">
+				    	<li><a href="">Home</a></li>
+				    	<li><a href="">Products</a></li>
+						<li><a href="">About</a></li>
+						<li><a href="">Contact</a></li>
+						<li><a href="">Account</a></li>
+					</ul>
+				</nav>
+				<a href="">Cart<i class="fa fa-shopping-cart"></i></a>
+				<img src="images/menu.jfif" class="menu" onclick="menutoggle()">
 	    	</div>
-	    	<div class="col-2">
-	    		<img src="images/download (1).png" >
+	    	<div class="row">
+	    		<div class="col-2">
+	    			<h1>Give Your Workout <br>A New Style!</h1>
+	    			<p>Success isn't always about greatness. It's about consistency.Consistent hard work gains success. Greatness will come.</p>
+	    			<a href="" class="btn">Explore Now &#x279C;</a>
+	    		</div>
+	    		<div class="col-2">
+	    			<img src="images/download (1).png" >
+	    		</div>
 	    	</div>
-	    </div>
 	    </div>
 	    <div class="categories">
-		<div class="small-container">
-		<div class="row">
-			<div class="col-3">
-				<img src="images/as1.jfif">
-				<h4>PUMA T-shirt</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
+			<div class="small-container">
+				<div class="row">
+					<div class="col-3">
+						<img src="images/as1.jfif">
+					</div>
+					<div class="col-3">
+						<img src="images/as2.jfif">
+					</div>
+					<div class="col-3">
+						<img src="images/as3.jfif">
+					</div>
 				</div>
-				<p>$6.50</p>
-			</div>
-			<div class="col-3">
-				<img src="images/as2.jfif">
-				<h4>SPORTS Shoes</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
-				    <i class="fa fa-star-o"></i>
-				</div>
-				<p>$7.00</p>
-			</div>
-			<div class="col-3">
-				<img src="images/as3.jfif">
-				<h4>NIKE Trousers</h4>
-				<div class="rating">
-					<i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
-				</div>
-				<p>$8.00</p>
 			</div>
 		</div>
-		</div>
-	</div>
 	</div>
 	<div class="small-container">
-		<h2 class="title">Featured products</h2>
+		<h2 class="title">Popular products</h2>
 		<div class="row">
 			<div class="col-4">
 				<img src="images/sk1.jfif">
@@ -129,7 +105,32 @@
 				<p>$7.50</p>
 			</div>
 		</div>
-		<h2 class="title">Latest  products</h2>
+	</div>	
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="images/redmi9.jfif" class="offer-img">
+				</div>
+				<div class="col-2">
+					<p>Exclusively Available on RedStore</p>
+					<h1>Redmi Note 9 Pro</h1>
+					<small>48MP AI Quad Camera.16.9cm (6.67) FHD+ Dot Displa.Qualcomm&reg Snapdragon&trade; 720G.5020mAh battery</small>
+					<h3>price: $225.00</h3>
+					<div class="rating">
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star-o"></i>
+				</div>
+					<a href="" class="btn">BUY Now &#x279C;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="small-container">
+		<h2 class="title">Latest products</h2>
 		<div class="row">
 			<div class="col-4">
 				<img src="images/a1.jfif">
@@ -169,221 +170,357 @@
 			</div>
 			<div class="col-4">
 				<img src="images/a4.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a5.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a6.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a7.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a8.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a9.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a10.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a11.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a12.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a13.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a14.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a15.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a16.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a17.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a18.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a19.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a20.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
-				    <i class="fa fa-star-o"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 			<div class="col-4">
 				<img src="images/a21.jfif">
-				<h4>Orange Printed T-shirt</h4>
+				<h4>White Printed T-shirt</h4>
 				<div class="rating">
+					<i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star-o"></i>
+				</div>
+				<p>$7.50</p>
+			</div>
+			<div class="col-4">
+				<img src="images/a22.jfif">
+				<h4>White Printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star-o"></i>
+				</div>
+				<p>$7.50</p>
+			</div>
+			<div class="col-4">
+				<img src="images/a23.jfif">
+				<h4>White Printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star-o"></i>
+				</div>
+				<p>$7.50</p>
+			</div>
+			<div class="col-4">
+				<img src="images/a24.jfif">
+				<h4>White Printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star-o"></i>
+				</div>
+				<p>$7.50</p>
+			</div>
+			<div class="col-4">
+				<img src="images/a25.jfif">
+				<h4>White Printed T-shirt</h4>
+				<div class="rating">
+					<i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
+				    <i class="fa fa-star"></i>
 				    <i class="fa fa-star-o"></i>
 				</div>
 				<p>$7.50</p>
 			</div>
 		</div>
 	</div>
+	<div class="brands">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-5">
+					<img src="images/b1.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b2.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b3.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b4.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b5.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b6.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b7.jfif">
+				</div>
+				<div class="col-5">
+					<img src="images/b8.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b9.png">
+				</div>
+				<div class="col-5">
+					<img src="images/b10.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="footer-col-1">
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone</p>
+					<div class="app-logo">
+						<img src="images/s1.png">
+						<img src="images/s2.png">
+					</div>
+				</div>
+				<div class="footer-col-2">
+					<img src="images/download.png" width="150px">
+				</div>
+				<div class="footer-col-3">
+					<h3>Useful Links</h3>
+					<ul>
+						<li>Coupons</li>
+						<li>Blog Posts</li>
+						<li>Return Policy</li>
+						<li>Join Affiliate</li>
+					</ul>
+				</div>
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook</li>
+						<li>Instagram</li>
+						<li>Twitter</li>
+						<li>YouTube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">copyright &copy; 2020 - <span class ="over">CHANDRA KUMAR RAJA CHALAPAKA</span></p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var menuitems = document.getElementById("menuitems");
+		menuitems.style.maxHeight="0px";
+		function menutoggle(){
+			if(menuitems.style.maxHeight=="0px")
+			{
+				menuitems.style.maxHeight="200px";
+			}
+			else
+			{
+				menuitems.style.maxHeight="0px";
+			}
+		}
+
+	</script>
 </body>
 </html>
