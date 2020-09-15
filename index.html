@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Red Store | Ecommerce</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,18 +12,19 @@
 		<div class="container">
 		    <div class="navbar">
 		    	<div class="logo">
-			    	<img src="images/download.png" width="150px">
+			    	<img src="images/download.png" width="100px" height="30px">
 		    	</div>
 		    	<nav>
-			    	<ul>
+			    	<ul id="menuitems">
 				    	<li><a href="">Home</a></li>
 				    	<li><a href="">Products</a></li>
 						<li><a href="">About</a></li>
 						<li><a href="">Contact</a></li>
 						<li><a href="">Account</a></li>
-						<li><a href="">Cart<i class="fa fa-shopping-cart"></i></a></li>
 					</ul>
 				</nav>
+				<a href="">Cart<i class="fa fa-shopping-cart"></i></a>
+				<img src="images/menu.jfif" class="menu" onclick="menutoggle()">
 	    	</div>
 	    	<div class="row">
 	    		<div class="col-2">
@@ -471,8 +474,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="footer-col-1">
-				<h3>Download Our App</h3>
-				<p>Download App for Android and ios mobile phone</p>
+					<h3>Download Our App</h3>
+					<p>Download App for Android and ios mobile phone</p>
+					<div class="app-logo">
+						<img src="images/s1.png">
+						<img src="images/s2.png">
+					</div>
 				</div>
 				<div class="footer-col-2">
 					<img src="images/download.png" width="150px">
@@ -496,7 +503,24 @@
 					</ul>
 				</div>
 			</div>
+			<hr>
+			<p class="copyright">copyright &copy; 2020 - <span class ="over">CHANDRA KUMAR RAJA CHALAPAKA</span></p>
 		</div>
 	</div>
+	<script type="text/javascript">
+		var menuitems = document.getElementById("menuitems");
+		menuitems.style.maxHeight="0px";
+		function menutoggle(){
+			if(menuitems.style.maxHeight=="0px")
+			{
+				menuitems.style.maxHeight="200px";
+			}
+			else
+			{
+				menuitems.style.maxHeight="0px";
+			}
+		}
+
+	</script>
 </body>
 </html>
